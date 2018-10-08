@@ -1,4 +1,4 @@
-namespace :db do
+namespace :mongodb do
   unless Rake::Task.task_defined?("db:drop")
     desc 'Drops all the collections for the database for the current Rails.env'
     task :drop => :environment do
